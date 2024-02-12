@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body id="login">
+    <header>
+      <nav>
+        <img src="/images/logo.webp" alt="logo" class="logo" />
+        <ul class="menu">
+          <li class="link">
+            <a href="index.html">HOME</a>
+          </li>
+          <li class="link">
+            <a href="cartes.html">CARTES</a>
+          </li>
+          <li class="link">
+            <a href="login.html">CONNEXION</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="citation">
+        <h1>
+          “Quand nous rêvons, nous entrons dans un monde qui n’appartient qu’à
+          nous.”
+        </h1>
+      </div>
+
+      <div class="message-error">
+        <ul></ul>
+      </div>
+
+      <div class="message-success">Formulaire envoyé avec succès</div>
+
+      <div class="login-container">
+        <div class="form-container">
+          <form
+            class="form-content"
+            action=""
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <h1 id="titreconnexion">INSCRIPTION</h1>
+
+            <div>
+              <label for="pseudo">Pseudo</label>
+              <input type="text" id="pseudo" name="pseudo" />
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+            </div>
+
+            <div>
+              <label for="password">Mot de passe</label>
+              <input type="password" id="password" name="password" />
+            </div>
+
+            <div>
+              <label for="password2">Confirmation du mot de passe</label>
+              <input type="password" id="password2" name="password2" />
+            </div>
+
+            <button type="submit" id="button">Inscription</button>
+            <a href="login.html">
+              <div class="button-login">Connexion</div>
+            </a>
+          </form>
+        </div>
+      </div>
+
+      <!-- FORMULAIRE MARIE-ALINE 
+      <div class="login-container">
+       <div class="form-container">
+          <form class="form-content">
+            <h1 id="titreconnexion">INSCRIPTION</h1>
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Adresse e-mail:</label>
+            <input type="text" id="email" name="email" />
+            <label for="pwd">Mot de passe:</label>
+            <input type="password" id="pwd" name="pwd" />
+            <label for="confirmPwd">Confirmation du mot passe:</label>
+            <input type="password" id="confirmPwd" name="pwd" />
+            <button type="submit" id="button">Inscription</button>
+            <a href="login.html">
+            <div class="button-login">Connexion</div>
+          </a>  
+          </form>
+                  
+        </div>
+      </div>
+      </div>
+    -->
+
+      <div class="darkMode-btn">
+        <h1>Dark Mode</h1>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/cartes.css" />
+  </head>
+  <body id="cartes">
+    <header>
+      <nav>
+        <img src="/images/logo.webp" alt="logo" class="logo" />
+        <ul class="menu">
+          <li class="link">
+            <a href="index.html">HOME</a>
+          </li>
+          <li class="link">
+            <a href="cartes.html">CARTES</a>
+          </li>
+          <li class="link">
+            <a href="login.html">CONNEXION</a>
+          </li>
+        </ul>
+          <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </nav>
+    </header>
+    <main>
+      <div class="filter" id="filterType">
+        <button id="BtnAll" class="btnFiltre select"
+        data-type="all">Tous</button>
+        <button id="BtnGryff" class="btnFiltre" data-type="Gryffondor">Gryffondor</button>
+        <button id="BtnPouff" class="btnFiltre" data-type="Pouffsouffle">Pouffsouffle</button>
+        <button id="BtnSerdaigle" class="btnFiltre" data-type="Serdaigle">Serdaigle</button>
+        <button id="BtnSerpen" class="btnFiltre" data-type="Serpentard">Serpentard</button>
+        
+      </div>
+
+      <div id="buttons">
+        <button class="btn-active" onclick="filterSelection('all')"></button>
+      </div>
+  
+      <h1 id="keyframe1">NOS CARTES :</h1>
+
+      <div class="personnages" id="gallery">
+        <div class="card_container" data-type="Gryffondor">
+          <img src="/images/cartes/Harry Potter.png" alt="Harry Potter" class="card_image harrypotter"/>
+          <a href="">
+            <div class="title_card_btn">Harry Potter</div>
+            <button type="submit" id="button"></button>
+          </a>
+        </div>
+
+        <div class="card_container" data-type="Gryffondor">
+          <img
+            src="/images/cartes/Hermione Granger.png"
+            alt="Hermione Granger"
+            class="card_image"
+          />
+          <a href="">
+            <div class="title_card_btn">Hermione Granger</div>
+          </a>
+        </div>
+
+        <div class="card_container" data-type="Serpentard">
+          <img
+            src="/images/cartes/Draco Malfoy.png"
+            alt="Draco Malfoy"
+            class="card_image"
+          />
+          <a href="">
+            <div class="title_card_btn">Draco Malfoy</div>
+          </a>
+        </div>
+
+        <div class="card_container" data-type="Serpentard">
+          <img
+            src="/images/cartes/Gregory Goyle.png"
+            alt="Gregory Goyle"
+            class="card_image"
+          />
+          <a href="">
+            <div class="title_card_btn">Gregory Goyle</div>
+          </a>
+        </div>
+
+        <div class="card_container" data-type="Serdaigle">
+          <img
+            src="/images/cartes/Luna Lovegood.png"
+            alt="Luna Lovegood"
+            class="card_image"
+          />
+          <a href="">
+            <div class="title_card_btn">Luna Lovegood</div>
+          </a>
+        </div>
+
+        <div class="card_container" data-type="Serdaigle">
+          <img
+            src="/images/cartes/Cho Chang.png"
+            alt="Cho Chang"
+            class="card_image"
+          />
+          <a href="">
+            <div class="title_card_btn">Cho Chang</div>
+          </a>
+        </div>
+
+        <div class="card_container" data-type="Pouffsouffle">
+          <img
+            src="/images/cartes/Cedric Diggory.png"
+            alt="Cedric Diggory"
+            class="card_image"
+          />
+          <a href="">
+            <div class="title_card_btn">Cedric Diggory</div>
+          </a>
+        </div>
+
+        <div class="card_container" data-type="Pouffsouffle">
+          <img
+            src="/images/cartes/Justin Finch.png"
+            alt="Justin Finch"
+            class="card_image"
+          />
+          <a href="">
+            <div class="title_card_btn">Justin Finch</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="darkMode-btn">
+        <h1>Dark Mode</h1>
+      </div>
+      
+    </main>
+  <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.titre-article {
+  text-align: center;
+}
+
+body {
+  background-color: antiquewhite;
+  color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+#hero {
+  background-image: url(/images/poudlard.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#cartes {
+  background-color: tan;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#login {
+  background-image: url(/images/great\ hall.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  background-color: beige;
+}
+
+nav {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s ease-out;
+}
+
+nav a:hover {
+  color: crimson;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: larger;
+  /* pour rendre le texte plus gras*/
+  font-weight: 500;
+
+  color: black;
+  /* enlève les points*/
+  list-style-type: none;
+}
+
+.logo {
+  width: 15rem;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+@media (max-width: 800px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .menu {
+    /*si tu scroll down le menu ne va pas bouger*/
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: beige;
+    /*ça fait comme un calque sa met par dessus*/
+    z-index: 5;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .menu.dark-mode {
+    background-color: aquamarine;
+  }
+
+  .link {
+    margin: 16px 0;
+  }
+
+  /*si on active la class nav menu, on display le menu*/
+  .menu.active {
+    left: 0;
+  }
+}

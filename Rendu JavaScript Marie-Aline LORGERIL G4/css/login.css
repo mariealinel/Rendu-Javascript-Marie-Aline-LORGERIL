@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+.titre-article {
+  text-align: center;
+}
+
+.dark-mode {
+  background-image: url(/images/great\ hall_night.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  background-image: url(/images/great\ hall.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#citation {
+  text-align: center;
+  color: aliceblue;
+  padding: 1rem;
+  margin: 2rem;
+  background-color: darkslateblue;
+  border-radius: 20px;
+  animation: citation 5s infinite;
+}
+
+@keyframes citation {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+form {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: black;
+}
+
+.borderlogin {
+  padding: 100px;
+  border: 2px solid black;
+  border-radius: 5%;
+  background-color: beige;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: black;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  border: 3px solid gray;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: cornsilk;
+  border-radius: 4%;
+  padding: 6rem;
+  gap: 25px;
+}
+
+#titreconnexion {
+  color: black;
+  align-self: center;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+#email,
+#pwd {
+  padding: 3px 80px;
+}
+
+#button {
+  padding: 10px 80px;
+  margin-top: 20px;
+  border-radius: 100px;
+  border: transparent;
+  background-color: black;
+  color: white;
+}
+
+.button-signin,
+.button-login {
+  width: fit-content;
+  border-radius: 0.5rem;
+  background: gray;
+  padding: 0.5rem 1rem;
+  margin-top: 2rem;
+}
+
+.message-error {
+  border: 1px solid rgb(212, 42, 0);
+  color: white;
+  background-color: rgba(212, 42, 0, 0.4);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.message-error.visible {
+  display: block;
+}
+
+.message-success {
+  border: 1px solid rgb(81, 150, 2);
+  color: white;
+  background-color: rgba(113, 212, 0, 0.4);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.message-success.visible {
+  display: block;
+}
+
+.success {
+  border: 1px solid rgb(81, 150, 2);
+  background-color: rgba(113, 212, 0, 0.4);
+}

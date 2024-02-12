@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  </head>
+  <body id="hero">
+    
+    <header>
+      <nav>
+        <img src="/images/logo.webp" alt="logo" class="logo" />
+        <ul class="menu">
+          <li class="link">
+            <a href="index.html">HOME</a>
+          </li>
+          <li class="link">
+            <a href="cartes.html">CARTES</a>
+          </li>
+          <li class="link">
+            <a href="login.html">CONNEXION</a>
+          </li>
+        </ul>
+          <div class="hamburger">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+     <div class="swiper mon-slider">
+       <div class="swiper-wrapper">
+
+        <div class="swiper-slide slide-gryf">
+          <img src="/images/gryffindor.jpg" alt="">
+        </div>
+
+        <div class="swiper-slide slide-serp">
+          <img src="/images/slytherin.jpg" alt="">
+        </div>
+
+        <div class="swiper-slide slide-serd">
+          <img src="/images/ravenclaw.jpg" alt="">
+        </div>
+
+        <div class="swiper-slide slide-pouff">
+          <img src="/images/hufflepuff.jpg" alt="">
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      </div>
+
+      
+      <div class="bienvenue">
+        <div class="transition1">
+          <h1 id="titrelogin">Entre dans l'univers magique de Poudlard</h1>
+        </div>
+
+        <div class="texte">
+          <p>
+            Collectionne les cartes de tes personnages préférés de la célèbre
+            saga d'Harry Potter
+          </p>
+          <p>
+            Gryffondor, Serpentard, Pouffsouffle et Serdaigle n'attendent que
+            toi !
+          </p>
+        </div>
+
+        <button type="submit" id="button">C'est parti !</button>
+        <a href="cartes.html"></a>
+      </div>
+     
+     <div class="tabhome">
+       <div class="tab-conteneur">
+          <div class="tab">
+           <button class="tablinks active" data-tab="gryffondor">Gryffondor</button>
+           <button class="tablinks" data-tab="serpentard">Serpentard</button>
+           <button class="tablinks" data-tab="serdaigle">Serdaigle</button>
+           <button class="tablinks" data-tab="pouffsouffle">Pouffsouffle</button>
+          </div>
+
+          <div id='gryffondor' class="tab_content active">
+            <p>Les membres de la maison Gryffondor sont célèbres pour leur courage, leur bravoure, leur sens de la justice et leur disposition au sacrifice.</p>
+          </div>
+
+          <div id='serpentard' class="tab_content">
+            <p>Les membres de la maison Serdaigle sont renommés pour leur intelligence, leur érudition, leur créativité et leur curiosité sans fin.</p>
+          </div>
+
+          <div id='serdaigle' class="tab_content">
+            <p>Les Serpentards sont des individus très complexes, intelligents, ambitieux, ingénieux, vifs d'esprit et rusés. </p>
+          </div>
+
+          <div id='pouffsouffle' class="tab_content">
+            <p>La gentillesse, la tolérance, la justice, la sincérité, la loyauté, l'humilité et le sérieux. Ils sont dignes de confiance et ne jugent personne.</p>
+          </div>
+       </div>
+      </div>
+
+      <div class="darkMode-btn">
+        <h1>Dark Mode</h1>
+      </div>
+
+    </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+</html>
